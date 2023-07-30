@@ -1,7 +1,7 @@
 # MyFirstApp
 
 ## Değişkenin TS Dosyasıyla HTML Dosyasında Kullanımı:
-Angular'da, TypeScript dosyasında tanımlanan değişkenleri HTML dosyasında görüntülemek için tek yönlü ve çift yönlü veri bağlama kullanırız. Tek yönlü veri bağlama, değişkenlerin TypeScript dosyasından HTML dosyasına aktarılmasını sağlar ve değişkenleri HTML içinde kullanarak dinamik içerik oluşturabiliriz. Örneğin, <p>{{ ad }}</p> şeklindeki kodla "ad" adlı değişkenin değeri ekranda görüntülenebilir. Çift yönlü veri bağlama ise, değişkenleri hem TypeScript'te hem de HTML'de kullanarak kullanıcıdan veri girişi almak ve verileri senkronize etmek için kullanılır. Bunun için [(ngModel)] direktifini kullanırız.
+Angular'da, TypeScript dosyasında tanımlanan değişkenleri HTML dosyasında görüntülemek için tek yönlü ve çift yönlü veri bağlama kullanırız. Tek yönlü veri bağlama, değişkenlerin TypeScript dosyasından HTML dosyasına aktarılmasını sağlar ve değişkenleri HTML içinde kullanarak dinamik içerik oluşturabiliriz. string interpolasyon yani iki kıvırcık {{name}} ile veya property binding yani [value]="name" ile kullanılabilir. Çift yönlü veri bağlama ise, değişkenleri hem TypeScript'te hem de HTML'de kullanarak kullanıcıdan veri girişi almak ve verileri senkronize etmek için kullanılır. Bunun için [(ngModel)] direktifini kullanırız.
 
 ## Metot Oluşturma:
 Angular bileşenlerinde TypeScript dosyasında metotlar oluşturarak işlevselliği sağlayabiliriz. Metotlar, bileşenin içinde belirli işlemleri gerçekleştirmek için kullanılır ve HTML dosyasından çağrılabilir. Örneğin, bir "save()" metodu oluşturup, <button (click)="save()">Kaydet</button> şeklinde HTML dosyasında çağırabiliriz. Bu şekilde metotlar, bileşenin kodunu daha düzenli ve modüler hale getirir.
