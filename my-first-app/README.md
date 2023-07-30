@@ -17,4 +17,3 @@ Angular'da, bir bileşen içerisinde başka bir bileşeni kullanabiliriz. Bu, uy
 
 ## Componentler Arası Veri Taşıma:
 Angular'da bileşenler arasında veri taşımak için Input ve Output dekoratörlerini kullanırız. Input dekoratörü ile ana bileşenden alt bileşene veri gönderebiliriz. Output dekoratörü ile de alt bileşenden ana bileşene veri aktarabiliriz. Bu sayede bileşenler arasında veri paylaşımı gerçekleştirerek uygulamanın farklı parçalarının haberleşmesini sağlayabiliriz.
-
