@@ -1,0 +1,17 @@
+<table>
+    <thead>
+        <tr>
+            <th># </th>
+            <th>Yapılacak </th>
+            <th>Tamamlandı mı? </th>  
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let todo of todos let i = index">
+            <td>{{ i}}</td>
+            <td>{{ todo.work}}</td>
+            <td *ngIf="todo.isCompleted" style="color:green">{{todo.isCompleted ? 'tamamlandı':'tamamlanmadı'}}</td>
+            <td *ngIf="!todo.isCompleted" style="color:red">{{todo.isCompleted ? 'tamamlandı':'tamamlanmadı'}}</td>
+        </tr>
+    </tbody>
+</table>
