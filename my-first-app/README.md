@@ -1,27 +1,24 @@
 # MyFirstApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+##Değişkenin TS Dosyasıyla HTML Dosyasında Kullanımı:
+Angular'da, TypeScript dosyasında tanımlanan değişkenleri HTML dosyasında görüntülemek için tek yönlü ve çift yönlü veri bağlama kullanırız. Tek yönlü veri bağlama, değişkenlerin TypeScript dosyasından HTML dosyasına aktarılmasını sağlar ve değişkenleri HTML içinde kullanarak dinamik içerik oluşturabiliriz. Örneğin, <h1>Merhaba, {{ ad }}!</h1> şeklindeki kodla "ad" adlı değişkenin değeri ekranda görüntülenebilir. Çift yönlü veri bağlama ise, değişkenleri hem TypeScript'te hem de HTML'de kullanarak kullanıcıdan veri girişi almak ve verileri senkronize etmek için kullanılır. Bunun için [(ngModel)] direktifini kullanırız.
 
-## Development server
+##Metot Oluşturma:
+Angular bileşenlerinde TypeScript dosyasında metotlar oluşturarak işlevselliği sağlayabiliriz. Metotlar, bileşenin içinde belirli işlemleri gerçekleştirmek için kullanılır ve HTML dosyasından çağrılabilir. Örneğin, bir "save()" metodu oluşturup, <button (click)="save()">Kaydet</button> şeklinde HTML dosyasında çağırabiliriz. Bu şekilde metotlar, bileşenin kodunu daha düzenli ve modüler hale getirir.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+##Kayıt ve Listeleme İşlemi (HTML Tarafında For Döngüsü Kullanımı):
+Angular'da, *ngFor direktifi kullanarak liste içinde döngü yaparak verileri listelemek için kullanabiliriz. Bu direktif ile dizi veya koleksiyonlardaki verileri HTML içinde tekrarlayarak liste oluşturabiliriz. Örneğin, <li *ngFor="let kullanici of kullanicilar">{{ kullanici }}</li> şeklindeki kodla "kullanicilar" adlı dizi içindeki kullanıcıları listeleyebiliriz.
 
-## Code scaffolding
+##Component Oluşturma:
+Angular'da, uygulamayı parçalara bölmek için bileşenler oluşturabiliriz. Bileşenler, kendi içinde HTML şablonu ve TypeScript kodu bulunan modüler yapılar olarak düşünülebilir. Böylece uygulamayı daha küçük ve yönetilebilir parçalara ayırabiliriz. Bileşenler, @Component dekoratörü ile oluşturulur ve HTML dosyasıyla ilişkilendirilir.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+##Componentleri İç İçe Kullanma:
+Angular'da, bir bileşen içerisinde başka bir bileşeni kullanabiliriz. Bu, uygulamayı daha modüler hale getirir ve bileşenler arası iletişimi sağlar. Bir bileşen içinde diğer bileşenleri kullanarak karmaşık yapıları daha küçük parçalara bölebiliriz. Böylece her bir bileşeni bağımsız olarak tasarlayıp, ana bileşen içinde kullanabiliriz.
 
-## Build
+##Componentler Arası Veri Taşıma:
+Angular'da bileşenler arasında veri taşımak için Input ve Output dekoratörlerini kullanırız. Input dekoratörü ile ana bileşenden alt bileşene veri gönderebiliriz. Output dekoratörü ile de alt bileşenden ana bileşene veri aktarabiliriz. Bu sayede bileşenler arasında veri paylaşımı gerçekleştirerek uygulamanın farklı parçalarının haberleşmesini sağlayabiliriz.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
